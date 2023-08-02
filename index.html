@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourMeal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a class="header__logo" href="./">
+                <img class="header__logo-img" src="./img/logo.png" alt="Your Meal">
+            </a>
+            <div class="header__block">
+                <img class="header__img" src="./img/burger.png" alt="Бургер"
+                    srcset="./img/burger.png 1x, ./img/retina/burger@2x.png 2x">
+                <div class="header__info">
+                    <h1 class="header__title">
+                        Только самые <span class="header__title-color">сочные бургеры!</span>
+                    </h1>
+                    <p class="header__descr">
+                        Бесплатная доставка от 240₴
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <div class="container">
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <button class="menu__button current" type="button">
+                        <img class="menu__button-img" src="./img/nav-icons/burger.png" alt="Бургеры">
+                        Бургеры
+                    </button>
+                </li>
+                <li class="menu__list-item">
+                    <button class="menu__button" type="button">
+                        <img class="menu__button-img" src="./img/nav-icons/onion.png" alt="Закуски">
+                        Закуски
+                    </button>
+                </li>
+                <li class="menu__list-item">
+                    <button class="menu__button" type="button">
+                        <img class="menu__button-img" src="./img/nav-icons/hotdog.png" alt="Хот-доги">
+                        Хот-доги
+                    </button>
+                </li>
+                <li class="menu__list-item">
+                    <button class="menu__button" type="button">
+                        <img class="menu__button-img" src="./img/nav-icons/combo.png" alt="Комбо">
+                        Комбо
+                    </button>
+                </li>
+                <li class="menu__list-item">
+                    <button class="menu__button" type="button">
+                        <img class="menu__button-img" src="./img/nav-icons/burrito.png" alt="Шаурма">
+                        Шаурма
+                    </button>
+                </li>
+                <li class="menu__list-item">
+                    <button class="menu__button" type="button">
+                        <img class="menu__button-img" src="./img/nav-icons/pizza.png" alt="Пицца">
+                        Пицца
+                    </button>
+                </li>
+                <li class="menu__list-item">
+                    <button class="menu__button" type="button">
+                        <img class="menu__button-img" src="./img/nav-icons/wok.png" alt="Вок">
+                        Вок
+                    </button>
+                </li>
+                <li class="menu__list-item">
+                    <button class="menu__button" type="button">
+                        <img class="menu__button-img" src="./img/nav-icons/doughnut.png" alt="Десерты">
+                        Десерты
+                    </button>
+                </li>
+                <li class="menu__list-item">
+                    <button class="menu__button" type="button">
+                        <img class="menu__button-img" src="./img/nav-icons/ketchup.png" alt="Соусы">
+                        Соусы
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <div class="container">
+            <div class="wrapper">
+                <aside class="cart">
+                    <div class="cart__wrapper">
+                        <h3 class="cart__title">
+                            Корзина
+                        </h3>
+                        <span class="cart__total-item">
+                            4
+                        </span>
+                    </div>
+                    <p class="cart__empty" style="display: none;">
+                        Тут пока пусто :(
+                    </p>
+                    <ul class="cart__list">
+                        <li class="cart__list-item">
+                            <img class="cart__item-img" src="./img/burger-1.jpg" alt="Супер сырный"
+                                srcset="./img/burger-1.jpg 1x, ./img/retina/burger-1@2x.jpg 2x">
+                            <div class="cart__item-info">
+                                <h4 class="cart__item-title">
+                                    Супер сырный
+                                </h4>
+                                <p class="cart__item-weight">
+                                    512г
+                                </p>
+                                <span class="cart__item-price">
+                                    222₴
+                                </span>
+                            </div>
+                            <div class="cart__quantity">
+                                <button class="cart__quantity-button cart__quantity-minus">-</button>
+                                <span class="cart__quantity-input">1</span>
+                                <button class="cart__quantity-button cart__quantity-plus">+</button>
+                            </div>
+                        </li>
+                        <li class="cart__list-item">
+                            <img class="cart__item-img" src="./img/snack-2.jpg" alt="Картошка фри"
+                                srcset="./img/snack-2.jpg 1x, ./img/retina/snack-2@2x.jpg 2x">
+                            <div class="cart__item-info">
+                                <h4 class="cart__item-title">
+                                    Картошка фри
+                                </h4>
+                                <p class="cart__item-weight">
+                                    180г
+                                </p>
+                                <span class="cart__item-price">
+                                    245₴
+                                </span>
+                            </div>
+                            <div class="cart__quantity">
+                                <button class="cart__quantity-button cart__quantity-minus">-</button>
+                                <span class="cart__quantity-input">2</span>
+                                <button class="cart__quantity-button cart__quantity-plus">+</button>
+                            </div>
+                        </li>
+                        <li class="cart__list-item">
+                            <img class="cart__item-img" src="./img/hotdog-2.jpg" alt="Жгучий хот-дог"
+                                srcset="./img/hotdog-2.jpg 1x, ./img/retina/hotdog-2@2x.jpg 2x">
+                            <div class="cart__item-info">
+                                <h4 class="cart__item-title">
+                                    Жгучий хот-дог
+                                </h4>
+                                <p class="cart__item-weight">
+                                    245г
+                                </p>
+                                <span class="cart__item-price">
+                                    239₴
+                                </span>
+                            </div>
+                            <div class="cart__quantity">
+                                <button class="cart__quantity-button cart__quantity-minus">-</button>
+                                <span class="cart__quantity-input">1</span>
+                                <button class="cart__quantity-button cart__quantity-plus">+</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart__total-price">
+                        Итого
+                        <span class="cart__price">
+                            951₴
+                        </span>
+                    </div>
+                    <button type="submit" class="cart__button">
+                        Оформить заказ
+                    </button>
+                    <div class="cart__free">
+                        <img class="cart__free-img" src="./img/other/delivery.png" alt="Бесплатная доставка">
+                        Бесплатная доставка
+                    </div>
+                </aside>
+                <section class="content">
+                    <h2 class="content__title">
+                        Бургеры
+                    </h2>
+                    <ul class="content__list">
+                        <li class="content__list-item">
+                            <img class="content__item-photo" src="./img/burger-1.jpg" alt="Мясная бомба"
+                                srcset="./img/burger-1.jpg 1x, ./img/retina/burger-1@2x.jpg 2x">
+                            <h3 class="content__item-price">
+                                275₴
+                            </h3>
+                            <p class="content__item-title">
+                                Мясная бомба
+                            </p>
+                            <p class="content__item-weight">
+                                520г
+                            </p>
+                            <button class="content__item-button" type="button">
+                                Добавить
+                            </button>
+                        </li>
+                        <li class="content__list-item">
+                            <img class="content__item-photo" src="./img/burger-2.jpg" alt="Супер сырный"
+                                srcset="./img/burger-2.jpg 1x, ./img/retina/burger-2@2x.jpg 2x">
+                            <h3 class="content__item-price">
+                                220₴
+                            </h3>
+                            <p class="content__item-title">
+                                Супер сырный
+                            </p>
+                            <p class="content__item-weight">
+                                512г
+                            </p>
+                            <button class="content__item-button" type="button">
+                                Добавить
+                            </button>
+                        </li>
+                        <li class="content__list-item">
+                            <img class="content__item-photo" src="./img/burger-3.jpg" alt="Сытный"
+                                srcset="./img/burger-3.jpg 1x, ./img/retina/burger-3@2x.jpg 2x">
+                            <h3 class="content__item-price">
+                                256₴
+                            </h3>
+                            <p class="content__item-title">
+                                Сытный
+                            </p>
+                            <p class="content__item-weight">
+                                580г
+                            </p>
+                            <button class="content__item-button" type="button">
+                                Добавить
+                            </button>
+                        </li>
+                        <li class="content__list-item">
+                            <img class="content__item-photo" src="./img/burger-4.jpg" alt="Тяжелый удар"
+                                srcset="./img/burger-4.jpg 1x, ./img/retina/burger-4@2x.jpg 2x">
+                            <h3 class="content__item-price">
+                                192₴
+                            </h3>
+                            <p class="content__item-title">
+                                Тяжелый удар
+                            </p>
+                            <p class="content__item-weight">
+                                470г
+                            </p>
+                            <button class="content__item-button" type="button">
+                                Добавить
+                            </button>
+                        </li>
+                        <li class="content__list-item">
+                            <img class="content__item-photo" src="./img/burger-5.jpg" alt="Вечная классика"
+                                srcset="./img/burger-5.jpg 1x, ./img/retina/burger-5@2x.jpg 2x">
+                            <h3 class="content__item-price">
+                                180₴
+                            </h3>
+                            <p class="content__item-title">
+                                Вечная классика
+                            </p>
+                            <p class="content__item-weight">
+                                450г
+                            </p>
+                            <button class="content__item-button" type="button">
+                                Добавить
+                            </button>
+                        </li>
+                        <li class="content__list-item">
+                            <img class="content__item-photo" src="./img/burger-6.jpg" alt="Итальянскийs"
+                                srcset="./img/burger-6.jpg 1x, ./img/retina/burger-6@2x.jpg 2x">
+                            <h3 class="content__item-price">
+                                224₴
+                            </h3>
+                            <p class="content__item-title">
+                                Итальянский
+                            </p>
+                            <p class="content__item-weight">
+                                510г
+                            </p>
+                            <button class="content__item-button" type="button">
+                                Добавить
+                            </button>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <a class="footer__logo" href="./">
+                    <img class="footer__logo-img" src="./img/footer-logo.png" alt="YourMeal"
+                        srcset="./img/footer-logo.png 1x, ./img/retina/footer-logo@2x.png 2x">
+                </a>
+                <div class="footer__contact">
+                    <div class="footer__contact-phone">
+                        <p class="footer__contact-title">
+                            Номер для заказа
+                        </p>
+                        <a class="footer__phone" href="tel:+30938333811">
+                            <svg class="footer__phone-icon">
+                                <use href="./img/icons/icons.svg#icon-phone"></use>
+                            </svg>
+                            +3(093)833-38-11
+                        </a>
+                    </div>
+                    <div class="footer__contact-social">
+                        <p class="footer__contact-title">
+                            Мы в соцсетях
+                        </p>
+                        <ul class="footer__social">
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#" target="_blank">
+                                    <svg class="footer__social-icon">
+                                        <use href="./img/icons/icons.svg#icon-vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#" target="_blank">
+                                    <svg class="footer__social-icon">
+                                        <use href="./img/icons/icons.svg#icon-tg"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
